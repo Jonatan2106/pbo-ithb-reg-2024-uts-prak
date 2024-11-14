@@ -122,39 +122,6 @@ public class TicketController{
         return ammount;
     }
 
-    public void getTrainDetails(){
-        for(Train train : listTrains){
-            System.out.println(train.getTrainNumber());
-            System.out.println(train.getTrainName());
-            System.out.println(train.getTrainType());
-        }
-    }
-
-    public void getPassangerInfo(){
-        for (Passanger passanger : listPassangers) {
-            System.out.println(passanger.getPassangerID());
-            System.out.println(passanger.getPassangerName());
-            System.out.println(passanger.getPassengerAge());
-            System.out.println(passanger.getPassengerGender());
-        }
-    }
-
-    public void printTicket(){
-        for (Ticket ticket : listTickets){
-            System.out.println(ticket.getTicketID());
-            System.out.println(ticket.getSeatNumber());
-            System.out.println(ticket.getClassType());
-            System.out.println(ticket.getStatus());
-            System.out.println(ticket.getPrice());
-        }
-    }
-
-    public void getTicketStatus(){
-        for (Ticket ticket : listTickets){
-            System.out.println(ticket.getStatus());
-        }
-    }
-
     public void reserveSeat(){
         int kursi;
         System.out.print("Mau beli berapa kursi : ");
